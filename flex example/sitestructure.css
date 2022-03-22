@@ -1,1 +1,30 @@
+header {
+    background-color: #77adda;
+    text-align: center;
+    padding: 20px;
+}
 
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.content {
+    background-color: #2ca152;
+    color: white;
+    padding: 20px;
+    height: 200px;
+    flex: 3;
+}
+
+.side {
+    background-color: #e6e6a5;
+    padding: 20px;
+    flex: 1;
+}
+
+main {
+    display: flex;
+}
