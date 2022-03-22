@@ -19,8 +19,14 @@ console.log(x/y);
 console.log(x%y);
 
 
+//add all numbers in an array
+let nums = [12, 66, 43, 22];
+let res = 0;
 
-
+for(let b=0; b<4; b++) {
+    res += nums[b];
+}
+console.log(res); 
 
 //multiply all numbers in an array
 let nums = [12, 66, 43, 22];
