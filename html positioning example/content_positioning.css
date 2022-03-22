@@ -1,1 +1,25 @@
+article {
+    position: relative;
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    z-index: 2;
+}
 
+.special {
+    z-index: 1;
+    position: absolute;
+    top:70px;
+    left:50%;
+    background-color: orange;
+}
+
+.third{
+    z-index: 2;
+    position: absolute;
+    top:140px;
+    left:50%;
+    width:50px;
+    background-color: green;
+}
