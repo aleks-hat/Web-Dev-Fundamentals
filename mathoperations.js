@@ -17,3 +17,17 @@ console.log(x/y);
 
 //modulo (remainder)
 console.log(x%y);
+
+
+
+
+
+//multiply all numbers in an array
+let nums = [12, 66, 43, 22];
+let res = 1;
+
+for(let a=0; a<4; a++) {
+    res *= nums[a];
+
+}
+console.log(res); 
