@@ -2,8 +2,9 @@ body{
   background-color:#eee;
 }
 
-header{
+#title {
   font-size:48px;
+  font-family:"";
   text-align:center;
   padding: 5px;
   margin:5px;
@@ -11,12 +12,28 @@ header{
 
 p {
   text-align:center;
-  padding:10px;
-  font-size:16px;
+  padding:5px;
+  font-size:17px;
 }
 
 img{
-  width:600px;
+  max-width:100%;
   height:700px;
-  position:absolute;
+}
+
+#img-div{
+  background-color:white;
+  margin:0;
+  padding:10px;
+}
+
+#img-caption{
+  text-align:center;
+  font-size:16px;
+  background-color:white;
+  padding:10px;
+}
+
+#headline{
+  text-align:center;
 }
