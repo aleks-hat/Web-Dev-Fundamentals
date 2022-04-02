@@ -4,127 +4,183 @@
   <title>Survey Form</title>
 </head>
 
-<body>
-<header id="header">
-  <h1 id="title">Team Survey Form</h1>
-<p id="description">Thanks for taking the time to send us feedback!</p>
-</header>
-<form id="survey-form">
-  <label id="name-label" for="name">Name:</label>
-  <input type="text" name="name" id="name" placeholder="Enter your name" required />
-                                       <label id="email-label" for="email">Email Address:</label>
-  <input type="email" name="email" id="email" placeholder="Enter your Email" required />
-  
-  <label id="number-label" for="number">Age: <span>(optional)</span></label>
-  <input type="number" name="age" id="number" placeholder="Age" min="10" max="99"/>
-  
-  <p>Which option best describes your current role?</p>
-      <select id="dropdown" name="role" required>
-        <option disabled selected value>Select current role</option>
-        <option value="student">Student</option>
-        <option value="job">Full Time Job</option>
-        <option value="unemployed">Seeking Work</option>
-        <option value="preferNo">Prefer not to say</option>
-        <option value="other">Other</option>
-      </select>
-  
-  <p>Would you recommend our tutorial to a friend?</p>
-      <label>
-        <input
-          name="user-recommend"
-          value="definitely"
-          type="radio"
-          checked
-        />Definitely</label
-      >
-      <label>
-        <input
-          name="user-recommend"
-          value="maybe"
-          type="radio"
-        />Maybe</label
-      >
-
-      <label
-        ><input
-          name="user-recommend"
-          value="not-sure"
-          type="radio"
-                />No</label>
-
-      <p>
-        What would you like to see improved?
-        <span>(Check all that apply)</span>
+<div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Free Courses Survey Form</h1>
+      <p id="description" class="description text-center">
+        Thank you for taking the time to give us feedback!
       </p>
-
-      <label
-        ><input
-          name="prefer"
-          value="front-end-projects"
-          type="checkbox"
-        />Front-end Projects</label
-      >
-      <label>
+    </header>
+    <form id="survey-form">
+      <div class="form-div">
+        <label id="name-label" for="name">Name</label>
         <input
-          name="prefer"
-          value="back-end-projects"
-          type="checkbox"
-        />Back-end Projects</label
-      >
-  <label
+          type="text"
+          name="name"
+          id="name"
+          class="input-form"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="form-div">
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="input-form"
+          placeholder="Enter your Email"
+          required
+        />
+      </div>
+      <div class="form-div">
+        <label id="number-label" for="number"
+          >Age<span class="place-text">(optional)</span></label
+        >
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="10"
+          max="99"
+          class="input-form"
+          placeholder="Age"
+        />
+      </div>
+      <div class="form-div">
+        <p>Which option best describes your current role?</p>
+        <select id="dropdown" name="role" class="input-form" required>
+          <option disabled selected value>Select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="unemployed">Seeking Work</option>
+          <option value="blank">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+  
+      <div class="form-div">
+        <p>Would you recommend our site to a friend?</p>
+        <label>
+          <input
+            name="recommend"
+            value="yes"
+            type="radio"
+            class="input-radio"
+            checked
+          />Definitely</label
+        >
+        <label>
+          <input
+            name="recommend"
+            value="maybe"
+            type="radio"
+            class="input-radio"
+          />Maybe</label
+        >
+  
+        <label
+          ><input
+            name="recommend"
+            value="no"
+            type="radio"
+            class="input-radio"
+          />No Thanks</label
+        >
+      </div>
+  
+      <div class="form-div">
+        <p>
+          What would you like to see improved?
+          <span class="place-text">(Check all that apply)</span>
+        </p>
+  
+        <label
+          ><input
+            name="prefer"
+            value="front-end-projects"
+            type="checkbox"
+            class="input-checkbox"
+          />Front-end Projects</label
+        >
+        <label>
+          <input
+            name="prefer"
+            value="back-end-projects"
+            type="checkbox"
+            class="input-checkbox"
+          />Back-end Projects</label
+        >
+        <label
         ><input
           name="prefer"
-          value="data-visualization"
+          value="math"
           type="checkbox"
+          class="input-checkbox"
         />Mathematics</label
       >
       <label
         ><input
           name="prefer"
-          value="data-visualization"
+          value="stats"
           type="checkbox"
-        />Data Mining</label
+          class="input-checkbox"
+        />Statistics</label
       >
-      <label
-        ><input
-          name="prefer"
-          value="challenges"
-          type="checkbox"
-        />Challenges</label
-      >
-      <label
-        ><input
-          name="prefer"
-          value="videos"
-          type="checkbox"
-        />Videos</label
-      >
-      
-      <label
-        ><input
-          name="prefer"
-          value="forum"
-          type="checkbox"
-        />Forum</label
-      >
-      <label
-        ><input
-          name="prefer"
-          value="additional-courses"
-          type="checkbox"
-        />Additional Courses</label
-      >
-       <p>Any comments or suggestions?</p>
-      <textarea
-        id="comments"
-        name="comment"
-        placeholder="Enter your comment here..."
-      ></textarea>
-
-      <button type="submit" id="submit">
-        Submit
-      </button>
-  </form>
+        <label
+          ><input
+            name="prefer"
+            value="data-mining"
+            type="checkbox"
+            class="input-checkbox"
+          />Data Mining</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="challenges"
+            type="checkbox"
+            class="input-checkbox"
+          />Challenges</label
+        >
+    
+        <label
+          ><input
+            name="prefer"
+            value="videos"
+            type="checkbox"
+            class="input-checkbox"
+          />Videos</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="additions"
+            type="checkbox"
+            class="input-checkbox"
+          />Additional Courses</label
+        >
+      </div>
+  
+      <div class="form-div">
+        <p>Any comments or suggestions?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+  
+      <div class="form-div">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+  
   
   </body>
 </html>
