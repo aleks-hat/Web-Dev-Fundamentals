@@ -1,16 +1,13 @@
-
-
-@import 'https://fonts.googleapis.com/css?family=Red Hat Display:400,700';
+@import "https://fonts.googleapis.com/css?family=Red Hat Display:400,700";
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
   background-color: #eee;
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 #main {
@@ -26,7 +23,6 @@ a {
   text-decoration: none;
 }
 
-/** global classes styling **/
 
 .container {
   max-width: 1000px;
@@ -61,31 +57,18 @@ header {
   background-color: #eee;
 }
 
-@media (max-width: 600px) {
-  header {
-    flex-wrap: wrap;
-  }
-}
 
 .logo {
   width: 60vw;
 }
 
-@media (max-width: 650px) {
-  .logo {
-    margin-top: 15px;
-    width: 100%;
-    position: relative;
-  }
+#header-img {
+  width:70px;
+  height:70px;
 }
 
-nav {
-  font-weight: 400;
-}
-
-@media (max-width: 650px) {
   nav {
-    margin-top: 10px;
+    margin-top:10px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -96,7 +79,14 @@ nav {
   nav li {
     padding-bottom: 5px;
   }
+
+#nav-bar > ul {
+  width:100%;
+  margin:0px;
+  display:flex;
+  justify-content:flex-end;
 }
+
 
 #signup {
   display: flex;
@@ -105,16 +95,16 @@ nav {
   justify-content: center;
   text-align: center;
   height: 200px;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
-#signup input[type='email'] {
+#signup input[type="email"] {
   max-width: 275px;
   width: 100%;
   padding: 5px;
 }
 
-#signup input[type='submit'] {
+#signup input[type="submit"] {
   max-width: 150px;
   width: 100%;
   height: 30px;
@@ -123,19 +113,15 @@ nav {
   background-color: #31bf49;
 }
 
-#signup input[type='submit']:hover {
+#signup input[type="submit"]:hover {
   background-color: darkgreen;
+  color:#bbb;
   transition: background-color 1s;
 }
 
-@media (max-width: 650px) {
-  #signup {
-    margin-top: 120px;
-  }
-}
 
 #features {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 #features .icon {
@@ -162,32 +148,33 @@ nav {
   padding: 5px;
 }
 
-@media (max-width: 550px) {
-  #features .desc {
-    width: 100%;
-    text-align: center;
-    padding: 0;
-    height: 150px;
-  }
-}
-
-@media (max-width: 650px) {
-  #features {
-    margin-top: 0;
-  }
-}
-
 #proccess {
   margin-top: 50px;
   display: flex;
   justify-content: center;
 }
 
+ .level {
+  background-color: #ddd;
+  color: black;
+  padding: 15px;
+  line-height:1.5em;
+  width: 89%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+
 #pricing {
   margin-top: 60px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+#pricelabel {
+  padding:15px;
+  margin-top:15px;
 }
 
 .product {
@@ -199,23 +186,27 @@ nav {
   margin: 10px;
   border: 1px solid #000;
   border-radius: 3px;
+  max-width: 300px;
+  line-height:1.5em;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
 
-
-@media (max-width: 800px) {
-  #pricing {
-    flex-direction: column;
+.product > ol > li {
+  line-height:1.5em;
+  margin-right:30px;
   }
-  .product {
-    max-width: 300px;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 10px;
-  }
-}
 
 footer {
   margin-top: 30px;
   background-color: #ddd;
   padding: 20px;
+}
+
+footer > ul, li, span {
+  display:flex;
+  justify-content:flex-end;
+  margin-top:5px;
+  padding: 0px 10px;
 }
