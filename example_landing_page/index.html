@@ -1,12 +1,15 @@
 <!-- example of a profuct landing page -->
 <!--live demo at https://codepen.io/aleks-hat/pen/mdpqxNg -->
+<!-- flex layout inspiration from FCC:Product Landing Page-->
 <!DOCTYPE HTML>
 <html>
   <head>
     <title>Langing Page</title>
   </head>
   <body>
+
 <script src="https://kit.fontawesome.com/2d3ef8d2d6.js" crossorigin="anonymous"></script>
+
 <div id="main">
   <header id="header">
     <div class="logo">
@@ -15,9 +18,9 @@
 
     <nav id="nav-bar">
       <ul>
-        <li><a class="nav-link" href="#features">Features</a></li>
-        <li><a class="nav-link" href="#proccess">The Process</a></li>
-        <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#expectations">What to Expect</a></li>
+        <li><a class="nav-link" href="#premium">Premium</a></li>
       </ul>
     </nav>
   </header>
@@ -25,7 +28,7 @@
   <div class="container"></div>
 
   <section id="signup">
-    <h2>Learn to code, for free</h2>
+    <h2 id="title">Learn to code, for free</h2>
     <br>
     <form id="form" action>
       <input name="email" id="email" type="email" placeholder="Enter your email address" required />
@@ -34,14 +37,15 @@
   </section>
 
   <div class="container">
-    <section id="features">
+    <section id="about">
       <div class="grid">
         <div class="icon"><i class="fa fa-3x fa-code"></i></div>
         <div class="desc">
           <h2>Premium Coding Tutorials</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit,sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
           </p>
         </div>
       </div>
@@ -50,8 +54,9 @@
         <div class="desc">
           <h2>Git Workspaces</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing 
+            elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
           </p>
         </div>
       </div>
@@ -62,19 +67,20 @@
         <div class="desc">
           <h2>Bug Tracking 101</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit,sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
           </p>
         </div>
       </div>
     </section>
-    <section id="proccess">
+    <section id="expectations">
       <iframe id="video" height="315" width="550" src="https://www.youtube.com/embed/tpIctyqH29Q" frameborder="0" allowfullscreen></iframe>
     </section>
-    <section id="pricing">
-      <div class="product" id="free">
-        <div class="level">Base Plan</div>
-        <h2 id="pricelabel">Free</h2>
+    <section id="premium">
+      <div class="plans" id="free">
+        <div class="planLabel">Base Plan</div>
+        <h2 id="price">Free</h2>
         <ol>
           <li>Lorem ipsum.</li>
           <li>Lorem ipsum.</li>
@@ -85,11 +91,11 @@
         <button class="btn">Select</button>
         <br>
       </div>
-      <div class="product" id="pro">
-        <div class="level">Pro Plan</div>
-        <h2 id="pricelabel">$12/month</h2>
+      <div class="plans" id="pro">
+        <div class="planLabel">Pro Plan</div>
+        <h2 id="price">$8/month</h2>
         <ol>
-          <li>Lorem ipsum.</li>
+          <li>More cool things</li>
           <li>Lorem ipsum.</li>
           <li>Lorem ipsum dolor.</li>
           <li>Lorem ipsum.</li>
@@ -98,9 +104,9 @@
         <button class="btn">Select</button>
         <br>
       </div>
-      <div class="product" id="valve">
-        <div class="level">Expert Plan</div>
-        <h2 id="pricelabel">$20/month</h2>
+      <div class="plans" id="valve">
+        <div class="planLabel">Expert Plan</div>
+        <h2 id="price">$15/month</h2>
         <ol>
           <li>Even more materials</li>
           <li>Access to all pro courses</li>
