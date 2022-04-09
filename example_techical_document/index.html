@@ -1,4 +1,15 @@
-<nav id="navbar">
+<!--example of a technical documentation page-->
+<!-- live demo at https://codepen.io/aleks-hat/pen/PoEOare -->
+<!-- layout inspiration from FCC: Techical Document-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Full Stack Development 101</title>
+         <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav id="navbar">
     <header>Full Stack 101</header>
     <ul>
       <li><a class="nav-link" href="#Overview">Overview</a></li>
@@ -23,12 +34,10 @@
         </p>
   
         <p>
-            Now, you will be thinking about how is this even related to this blog. 
+            Now, you will be thinking about how is this even related to this page. 
             So, these things are the outcome of various technologies and techniques and one among them is Full Stack Web Development.
         </p>
-        <p>
-            Now, let us look into the Full Stack development course from end-to-end for your convenience.
-        </p>
+        
       </article>
     </section>
     <section class="main-section" id="What_is_full_stack_development?">
@@ -60,6 +69,21 @@
             In HTML, the latest version is HTML5 and CSS3 is the current version in CSS. 
             HTML5 and CSS3 lend a helping hand in styling the content along with the decoration part of the website.
         </p>
+            <ul><li><pre><code>
+            /*This is CSS code*/
+            body {
+                background-color: lightblue;
+              }
+              
+            h1 {
+                color: white;
+                text-align: center;
+              }
+              
+            p {
+                font-family: verdana;
+                font-size: 20px;
+              }</code></pre></li></ul>
 
         <h3>
             JavaScript
@@ -74,6 +98,16 @@
             Moreover, this offers admirable features like prototypes, closure in making responsive web pages, functions, 
             along with higher-order event delegation.
         </p>
+        <ul><li><pre><code>
+            //This is JavaScript Code 
+            var x, y, z;
+            x = 5;    
+            y = 6;   
+            z = x + y;  
+            
+            document.getElementById("demo").innerHTML =
+            "The value of z is " + z + ".";
+            </code></pre></li></ul>
       </article>
     </section>
     <section class="main-section" id="Front-end_frameworks">
@@ -103,6 +137,17 @@
             Moreover, this offers admirable features like prototypes, closure in making responsive web pages, functions, 
             along with higher-order event delegation.
         </p>
+        <ul><li><pre><code>
+            import React from 'react';
+            import ReactDOM from 'react-dom';
+
+            function Hello(props) {
+                return &lt;h1&gt;Hello World!&lt;/h1&gt;;
+            }
+
+            ReactDOM.render(&lt;Hello /&gt;, document.getElementById('root'));
+        </code></pre></li></ul>
+
         <h3>Database & Cache</h3>
         <p>
             It is vital for every Full Stack developer to have the knowledge in Database and Cache. 
@@ -118,9 +163,9 @@
         <p>VCS is nothing but makes the developer keep a record of the changes that are made in the codebase recently.
             If the developer has enough knowledge of Git then it is extremely useful in understanding the process to 
             fetch the current code along with updating the codes followed by modifying other's codes.</p>
-        <h4>Git, GitHub SourceTree</h4>
+        <ul><li><h4>Git, GitHub SourceTree</h4>
         <p>Git is nothing but an open-source repository based on the web that helps in the productive management of the variations 
-        made to the codes, documents, applications and also some of the information related to the development of application.</p>
+        made to the codes, documents, applications and also some of the information related to the development of application.</p></li></ul>
         <h3>HTTP & REST</h3>
         <p>Now, the question arises of what's the functionality of HTTP, it just establishes the communication 
             between the server and client. REST is nothing but a lightweight replacement for RPC for the designing 
@@ -145,6 +190,13 @@
             It aids the developers in the creation of dynamic content for the interaction with the database and mainly deployed 
             for the development of software applications that are web-based.
         </p>
+        <ul><li><pre><code>
+            &lt;!--This is a PHP example--&gt;
+            
+            &lt;?php
+            echo "My first PHP script!";
+            ?&gt;
+           </code></pre></li></ul>
 
         <h3>
             Python
@@ -153,6 +205,11 @@
             Python is among the top programming languages used by organizations around the globe due to its simple 
             syntax with huge frameworks namely Flask, Django and many more. 
         </p>
+      <ul><li>  <pre><code> 
+        #This is a print statment in Python
+            print("Hello, World!")
+        </code></pre></li></ul>
+
         <h3>Database Web Storage</h3>
         <p>There comes a necessity of storing the data during the process of developing web pages for future accessibility.
             At times this demands for a developer with knowledge in memory storage and relational database. Hence, get thorough 
@@ -180,9 +237,11 @@
               >Beginners Guide to Full Stack Web Development</a
             >
           </li>
-        </ul>
-        <blockquote cite="">Plan your work and work your plan — Napolean Hill</blockquote>
+        <br>
+        <blockquote style="text-align:center;" cite="">Plan your work and work your plan — Napolean Hill</blockquote>
       </article>
     </section>
   </main>
   
+    </body>
+</html>
