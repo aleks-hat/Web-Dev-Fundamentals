@@ -1,19 +1,22 @@
 <!--example of a survey form for feedback-->
 <!--live demo can be found at https://codepen.io/aleks-hat/pen/wvprmjv -->
+<!--layout inspiration from FCC: Survey Form-->
 
 <!DOCTYPE HTML>
 <html>
 <head>
   <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <div class="container">
     <header class="header">
-      <h1 id="title" class="text-center">Free Courses Survey Form</h1>
+      <h1 id="title" class="text-center">Free Tutorials Survey Form</h1>
       <p id="description" class="description text-center">
         Thank you for taking the time to give us feedback!
       </p>
     </header>
+  <div class="grid">
     <form id="survey-form">
       <div class="form-div">
         <label id="name-label" for="name">Name</label>
@@ -110,10 +113,10 @@
         <label>
           <input
             name="prefer"
-            value="back-end-projects"
+            value="javascript"
             type="checkbox"
             class="input-checkbox"
-          />Back-end Projects</label
+          />JavaScript</label
         >
         <label
         ><input
@@ -183,7 +186,7 @@
       </div>
     </form>
   </div>
-  
+  </div>
   
   </body>
 </html>
