@@ -11,7 +11,7 @@
 
 <div class="container">
     <header class="header">
-      <h1 id="title" class="text-center">Free Tutorials Survey Form</h1>
+      <h1 id="title">Free Tutorials Survey Form</h1>
       <p id="description" class="description text-center">
         Thank you for taking the time to give us feedback!
       </p>
@@ -24,7 +24,7 @@
           type="text"
           name="name"
           id="name"
-          class="input-form"
+          class="text-form"
           placeholder="Enter your name"
           required
         />
@@ -35,14 +35,14 @@
           type="email"
           name="email"
           id="email"
-          class="input-form"
+          class="text-form"
           placeholder="Enter your Email"
           required
         />
       </div>
       <div class="form-div">
         <label id="number-label" for="number"
-          >Age<span class="place-text">(optional)</span></label
+          >Age<span class="text">(optional)</span></label
         >
         <input
           type="number"
@@ -50,14 +50,14 @@
           id="number"
           min="10"
           max="99"
-          class="input-form"
+          class="text-form"
           placeholder="Age"
         />
       </div>
       <div class="form-div">
         <p>Which option best describes your current role?</p>
-        <select id="dropdown" name="role" class="input-form" required>
-          <option disabled selected value>Select current role</option>
+        <select id="dropdown" class="drop-form" name="role" required>
+          <option value="0" selected disabled>Select current role</option>
           <option value="student">Student</option>
           <option value="job">Full Time Job</option>
           <option value="unemployed">Seeking Work</option>
@@ -73,7 +73,7 @@
             name="recommend"
             value="yes"
             type="radio"
-            class="input-radio"
+            class="radio"
             checked
           />Definitely</label
         >
@@ -82,24 +82,22 @@
             name="recommend"
             value="maybe"
             type="radio"
-            class="input-radio"
-          />Maybe</label
-        >
+            class="radio"
+          />Maybe</label>
   
         <label
           ><input
             name="recommend"
             value="no"
             type="radio"
-            class="input-radio"
-          />No Thanks</label
-        >
+            class="radio"
+          />No Thanks</label>
       </div>
   
       <div class="form-div">
         <p>
           What would you like to see improved?
-          <span class="place-text">(Check all that apply)</span>
+          <span class="text">(Check all that apply)</span>
         </p>
   
         <label
@@ -107,7 +105,7 @@
             name="prefer"
             value="front-end-projects"
             type="checkbox"
-            class="input-checkbox"
+            class="checkbox"
           />Front-end Projects</label
         >
         <label>
@@ -115,7 +113,7 @@
             name="prefer"
             value="javascript"
             type="checkbox"
-            class="input-checkbox"
+            class="checkbox"
           />JavaScript</label
         >
         <label
@@ -123,7 +121,7 @@
           name="prefer"
           value="math"
           type="checkbox"
-          class="input-checkbox"
+          class="checkbox"
         />Mathematics</label
       >
       <label
@@ -131,7 +129,7 @@
           name="prefer"
           value="stats"
           type="checkbox"
-          class="input-checkbox"
+          class="checkbox"
         />Statistics</label
       >
         <label
@@ -139,7 +137,7 @@
             name="prefer"
             value="data-mining"
             type="checkbox"
-            class="input-checkbox"
+            class="checkbox"
           />Data Mining</label
         >
         <label
@@ -147,7 +145,7 @@
             name="prefer"
             value="challenges"
             type="checkbox"
-            class="input-checkbox"
+            class="checkbox"
           />Challenges</label
         >
     
@@ -156,7 +154,7 @@
             name="prefer"
             value="videos"
             type="checkbox"
-            class="input-checkbox"
+            class="checkbox"
           />Videos</label
         >
         <label
@@ -164,23 +162,23 @@
             name="prefer"
             value="additions"
             type="checkbox"
-            class="input-checkbox"
+            class="checkbox"
           />Additional Courses</label
         >
       </div>
   
       <div class="form-div">
-        <p>Any comments or suggestions?</p>
+        <p>Any comments or suggestions?<span class="text">(optional)</span></p>
         <textarea
           id="comments"
-          class="input-textarea"
+          class="textbox"
           name="comment"
           placeholder="Enter your comment here..."
-        ></textarea>
+      ></textarea>
       </div>
   
       <div class="form-div">
-        <button type="submit" id="submit" class="submit-button">
+        <button type="submit" id="submit" class="btn">
           Submit
         </button>
       </div>
