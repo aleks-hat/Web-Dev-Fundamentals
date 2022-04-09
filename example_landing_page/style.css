@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Red Hat Display:400,700";
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Chelsea+Market&family=Poppins&family=Press+Start+2P&family=Special+Elite&family=Zilla+Slab&display=swap');
 
 * {
   margin: 0;
@@ -6,8 +6,8 @@
 }
 
 body {
-  background-color: #eee;
-  font-family: "Red Hat Display", sans-serif;
+  background-color: #abc7ca;
+  font-family: 'Zilla Slab', serif;
 }
 
 #main {
@@ -52,11 +52,16 @@ header {
   min-height: 75px;
   padding: 0px 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  background-color: #eee;
+  background-color: white;
+  width:100%;
 }
 
+#title {
+  font-family: 'Press Start 2P', cursive;
+  font-size:20px;
+}
 
 .logo {
   width: 60vw;
@@ -71,13 +76,14 @@ header {
     margin-top:10px;
     width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 0 50px;
+    padding: 0 60px;
   }
   nav li {
-    padding-bottom: 5px;
+    padding: 0px 30px 5px 0px;
+    font-size:18px;
+    font-weight:800;
   }
 
 #nav-bar > ul {
@@ -95,7 +101,7 @@ header {
   justify-content: center;
   text-align: center;
   height: 200px;
-  margin-top: 70px;
+  margin-top: 100px;
 }
 
 #signup input[type="email"] {
@@ -106,102 +112,105 @@ header {
 
 #signup input[type="submit"] {
   max-width: 150px;
+  font-size:15px;
   width: 100%;
   height: 30px;
   margin: 15px 0;
   border: 0;
-  background-color: #31bf49;
+  background-color: #00843d;
 }
 
 #signup input[type="submit"]:hover {
-  background-color: darkgreen;
-  color:#bbb;
+  background-color: #154734;
+  color:#fff;
   transition: background-color 1s;
 }
 
-
-#features {
+#about {
   margin-top: 20px;
 }
 
-#features .icon {
+#about .icon {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 125px;
   width: 20vw;
-  color: darkgreen;
+  color: #154734;
 }
 
 @media (max-width: 550px) {
-  #features .icon {
+  #about .icon {
     display: none;
   }
 }
 
-#features .desc {
+#about .desc {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 125px;
-  width: 80vw;
+  width: 70vw;
   padding: 5px;
 }
 
-#proccess {
+#expectations {
   margin-top: 50px;
   display: flex;
   justify-content: center;
 }
 
- .level {
-  background-color: #ddd;
+ .planLabel {
+  background-color: #00843d;
   color: black;
   padding: 15px;
   line-height:1.5em;
-  width: 89%;
+  width: 91%;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 800;
 }
 
-
-#pricing {
+#premium {
   margin-top: 60px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color:transparent;
 }
 
-#pricelabel {
+#price {
   padding:15px;
   margin-top:15px;
 }
 
-.product {
+.plans {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   width: calc(100% / 3);
-  margin: 10px;
   border: 1px solid #000;
   border-radius: 3px;
   max-width: 300px;
   line-height:1.5em;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 10px;
+  background-color:white;
 }
 
-.product > ol > li {
+.plans > ol > li {
   line-height:1.5em;
   margin-right:30px;
   }
 
 footer {
+  position:absolute;
+  min-height:75px;
   margin-top: 30px;
-  background-color: #ddd;
-  padding: 20px;
+  left:0px;
+  padding-top:15px;
+  width:100%;
+  background-color: white;
 }
 
 footer > ul, li, span {
