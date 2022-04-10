@@ -142,9 +142,9 @@ header h2 span {
 #contact .full-section {
     padding: 110px 0;
 }
-#contact img #contact-img {
+#contact img, #contact-img {
     margin-left: 25px;
-    border: 12px solid #ffffff;
+    border: 10px solid transparent;
 }
 #contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul {
     padding-left: 115px;
