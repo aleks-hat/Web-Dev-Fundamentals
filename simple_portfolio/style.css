@@ -142,11 +142,11 @@ header h2 span {
 #contact .full-section {
     padding: 110px 0;
 }
-#contact img #contact-img {
+#contact img, #contact-img {
     margin-left: 25px;
-    border: 12px solid #ffffff;
+    border: 10px solid transparent;
 }
-#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul {
+#contact h2, #contact #email, #contact #social, #contact ul {
     padding-left: 115px;
 }
 #contact #envelope {
@@ -157,13 +157,13 @@ header h2 span {
     font-size: 36px;
     line-height: 44px;
 }
-#contact #email-header{
+#contact #email{
     font-size: 32px;
     font-weight: 400;
     line-height: 44px;
     margin: -30px 0 5px 0;
 }
-#contact #socialmedia-header {
+#contact #social {
     font-weight: bold;
     font-size: 29px;
     line-height: 44px;
