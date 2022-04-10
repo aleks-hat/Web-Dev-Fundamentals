@@ -1,41 +1,46 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Architects+Daughter&family=Audiowide&family=Chelsea+Market&family=DM+Sans&family=Poppins&family=Press+Start+2P&family=Special+Elite&family=Zilla+Slab&display=swap');
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Zilla Slab', serif;
     color: #2b2b2b;
 }
 
-/****** GRID ******/
+::selection {
+  background: #c49075;
+  color:#2b2b2b;
+}
 
-.full-width {
+.full-section {
     width: 1200px;
     margin: 0 auto;
     overflow: auto;
 }
-.half-width {
+.half-section {
     width: 600px;
     float: left;
 }
-.third-width {
+.thirds-section {
     width: 400px;
     float: left;
 }
 
-/****** HEADER ******/
 
 header {
     height: 800px;
-    background: url('https://images.unsplash.com/photo-1511649475669-e288648b2339?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80');
+    background: url('https://media.istockphoto.com/photos/contemporary-workspace-with-books-colour-pencils-gadgets-and-supplies-picture-id929368282?k=20&m=929368282&s=612x612&w=0&h=3920H8nh8xYiXCBvfg8PQ3fZG2DWF0R9VJ4_K1MnOEc=');
     background-size: cover;
     background-position: center;
 }
 
 header h1 {
-    font-family: 'Lora', serif;
+    font-family: 'Antic Slab', serif;
     font-size: 30px;
     color: #84A9D9;
     padding: 65px 0 65px 25px;
+}
+#title {
+  width: 600px;
+  float: left;
 }
 nav {
     float: right;
@@ -51,10 +56,30 @@ nav ul li a {
     color: #828282;
     padding-left: 80px;
 }
+
+#welcome-section {
+    height:100vh;
+    width: 100%;
+    float: left;
+    padding:0px 115px;
+}
+
+ #navbar {
+    position:fixed;
+    top:0px;
+    width: 90%;
+}
+
+.project-tile{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
 header h2 {
     width: 1000px;
     clear: both;
-    font-family: 'Lora', serif;
+    font-family: 'Antic Slab', serif;
     font-size: 72px;
     line-height: 80px;
     color: #9b9b9b;
@@ -64,14 +89,13 @@ header h2 span {
     color: #2b2b2b;
 }
 
-/****** ABOUT ******/
 
-#about .full-width {
+#about .full-section {
     padding: 80px 0;
 }
 
 #about h2 {
-    font-family: 'Lora', serif;
+    font-family: 'Antic Slab', serif;
     font-size: 36px;
     padding-left: 50px;
 }
@@ -83,44 +107,42 @@ header h2 span {
     padding-right: 50px;
 }
 
-/****** WORK ******/
 
-#work {
+#projects {
     background-color: #8FCBD9;
     text-align: center;
 }
 
-#work .full-width {
-    padding: 115px 0;
+#projects .project-tile {
+    padding: 115px 0px;
 }
 
-#work img {
+#projects img {
     padding-bottom: 30px;
 }
 
-#work h3 {
+#projects h3 {
     font-size: 24px;
     line-height: 32px;
     width: 190px;
     margin: 0 auto;
 }
 
-#work p {
-    font-family: 'Lora', serif;
+#projects p {
+    font-family: 'Antic Slab', serif;
     font-size: 18px;
     line-height: 30px;
     padding: 0 50px;
 }
 
-/****** CONTACT ******/
 
 #contact {
     background-color: #ebebeb;
 }
-#contact .full-width {
+#contact .full-section {
     padding: 110px 0;
 }
-#contact img#contact-img {
+#contact img #contact-img {
     margin-left: 25px;
     border: 12px solid #ffffff;
 }
@@ -131,7 +153,7 @@ header h2 span {
     padding: 0 10px 0 115px;
 }
 #contact h2 {
-    font-family: 'Lora', serif;
+    font-family: 'Antic Slab', serif;
     font-size: 36px;
     line-height: 44px;
 }
@@ -163,4 +185,18 @@ header h2 span {
 }
 #contact ul img {
     padding-right: 48px;
+}
+
+.btn {
+  display: inline-block;
+  font-family: 'Antic Slab', serif;
+  font-size:1em;
+  font-weight:bold;
+  padding: 1rem 2rem;
+  margin:3em 0px 0px 0px;
+  border-radius: 2px;
+  background:#ebebeb;
+  color:#2b2b2b;
+  border:2px solid #555;
+  text-decoration:none;
 }
